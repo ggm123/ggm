@@ -14,10 +14,10 @@ HC_SuK043_C_t HC_SuK043_C_Analyze_Data()
 {
     float import0, import1,import2,import3;
     HC_SuK043_C_t HC_SuK043_C;
-    import0 = (int)((short)(CAN0->recvBuffer.data[0] ) ) ;
-    import1 = (int)((short)(CAN0->recvBuffer.data[1] ) ) ;
-    import2 = (int)((short)(CAN0->recvBuffer.data[2] ) ) ;
-    import3 = (int)((short)(CAN0->recvBuffer.data[3] ) ) ;
+    import0 = (int)((short)(CAN0->recvBuffer.data[0]));
+    import1 = (int)((short)(CAN0->recvBuffer.data[1]));
+    import2 = (int)((short)(CAN0->recvBuffer.data[2]));
+    import3 = (int)((short)(CAN0->recvBuffer.data[3]));
     HC_SuK043_C.import0 = import0;
     HC_SuK043_C.import1 = import1;
     HC_SuK043_C.import2 = import2;

@@ -1,0 +1,6 @@
+17:31:14 **** Incremental Build of configuration Default for project siasun-fhjqr ****
+make all 
+make: *** 没有规则可以创建目标“all”。 停止。
+
+17:31:14 Build Finished (took 222ms)
+

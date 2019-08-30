@@ -6,5 +6,5 @@ C_FLAGS = -O2 -pipe -g -feliminate-unused-debug-types -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/siasunhebo/ggm/siasun-fhjqr/./Timer -I/home/siasunhebo/ggm/siasun-fhjqr/./CNS_MGS_160S -I/home/siasunhebo/ggm/siasun-fhjqr/./CAN -I/home/siasunhebo/ggm/siasun-fhjqr/./CNS_RFID_1S -I/home/siasunhebo/ggm/siasun-fhjqr/./FD123_CA_000 -I/home/siasunhebo/ggm/siasun-fhjqr/./HC_SuK043_C -I/home/siasunhebo/ggm/siasun-fhjqr/./SPC_SDIO_1616 -I/home/siasunhebo/ggm/siasun-fhjqr/./UART 
+C_INCLUDES = -I/home/siasunhebo/ggm/siasun-fhjqr/./Timer -I/home/siasunhebo/ggm/siasun-fhjqr/./CNS_MGS_160S -I/home/siasunhebo/ggm/siasun-fhjqr/./CAN -I/home/siasunhebo/ggm/siasun-fhjqr/./CNS_RFID_1S -I/home/siasunhebo/ggm/siasun-fhjqr/./FD123_CA_000 -I/home/siasunhebo/ggm/siasun-fhjqr/./HC_SuK043_C -I/home/siasunhebo/ggm/siasun-fhjqr/./SPC_SDIO_1616 -I/home/siasunhebo/ggm/siasun-fhjqr/./UART -I/home/siasunhebo/ggm/siasun-fhjqr/./buffer -I/home/siasunhebo/ggm/siasun-fhjqr/./net -I/home/siasunhebo/ggm/siasun-fhjqr/./protocol -I/home/siasunhebo/ggm/siasun-fhjqr/./TCP -I/home/siasunhebo/ggm/siasun-fhjqr/./Math 
 

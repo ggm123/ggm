@@ -285,6 +285,33 @@ SPC_SDIO_1616/SPC_SDIO_1616.c.s:
 	$(MAKE) -f CMakeFiles/IMUtest.dir/build.make CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.s
 .PHONY : SPC_SDIO_1616/SPC_SDIO_1616.c.s
 
+TCP/TCP.o: TCP/TCP.c.o
+
+.PHONY : TCP/TCP.o
+
+# target to build an object file
+TCP/TCP.c.o:
+	$(MAKE) -f CMakeFiles/IMUtest.dir/build.make CMakeFiles/IMUtest.dir/TCP/TCP.c.o
+.PHONY : TCP/TCP.c.o
+
+TCP/TCP.i: TCP/TCP.c.i
+
+.PHONY : TCP/TCP.i
+
+# target to preprocess a source file
+TCP/TCP.c.i:
+	$(MAKE) -f CMakeFiles/IMUtest.dir/build.make CMakeFiles/IMUtest.dir/TCP/TCP.c.i
+.PHONY : TCP/TCP.c.i
+
+TCP/TCP.s: TCP/TCP.c.s
+
+.PHONY : TCP/TCP.s
+
+# target to generate assembly for a file
+TCP/TCP.c.s:
+	$(MAKE) -f CMakeFiles/IMUtest.dir/build.make CMakeFiles/IMUtest.dir/TCP/TCP.c.s
+.PHONY : TCP/TCP.c.s
+
 Timer/Timer.o: Timer/Timer.c.o
 
 .PHONY : Timer/Timer.o
@@ -393,6 +420,9 @@ help:
 	@echo "... SPC_SDIO_1616/SPC_SDIO_1616.o"
 	@echo "... SPC_SDIO_1616/SPC_SDIO_1616.i"
 	@echo "... SPC_SDIO_1616/SPC_SDIO_1616.s"
+	@echo "... TCP/TCP.o"
+	@echo "... TCP/TCP.i"
+	@echo "... TCP/TCP.s"
 	@echo "... Timer/Timer.o"
 	@echo "... Timer/Timer.i"
 	@echo "... Timer/Timer.s"

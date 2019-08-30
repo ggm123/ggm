@@ -24,6 +24,12 @@ CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o
  .././CAN/can.h
  .././SPC_SDIO_1616/SPC_SDIO_1616.h
  /home/siasunhebo/ggm/siasun-fhjqr/SPC_SDIO_1616/SPC_SDIO_1616.c
+CMakeFiles/IMUtest.dir/TCP/TCP.c.o
+ .././TCP/TCP.h
+ .././TCP/buffer.h
+ .././TCP/net.h
+ .././TCP/protocol.h
+ /home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.c
 CMakeFiles/IMUtest.dir/Timer/Timer.c.o
  .././Timer/Timer.h
  /home/siasunhebo/ggm/siasun-fhjqr/Timer/Timer.c
@@ -37,5 +43,6 @@ CMakeFiles/IMUtest.dir/main.c.o
  .././FD123_CA_000/FD123_CA_000.h
  .././HC_SuK043_C/HC_SuK043_C.h
  .././SPC_SDIO_1616/SPC_SDIO_1616.h
+ .././TCP/TCP.h
  .././Timer/Timer.h
  /home/siasunhebo/ggm/siasun-fhjqr/main.c

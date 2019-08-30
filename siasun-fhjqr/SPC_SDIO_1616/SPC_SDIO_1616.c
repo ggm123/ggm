@@ -9,6 +9,8 @@
 #include <stdio.h>
 
  canBus_t *CAN0;
+int SDIOa_Out0,  SDIOa_Out1,  SDIOa_Out2,  SDIOa_Out3;
+int SDIOc_Out0,  SDIOc_Out1,  SDIOc_Out2,  SDIOc_Out3;
 
 SPC_SDIO_1616_t SPC_SDIO_1616a_Analyze_Data()
 {
@@ -30,21 +32,35 @@ SPC_SDIO_1616_t SPC_SDIO_1616a_Analyze_Data()
 }
 SPC_SDIO_1616_t SPC_SDIO_1616c_Analyze_Data()
 {
-			float import0, import1,import2,import3;
-			SPC_SDIO_1616_t SPC_SDIO_1616c;
-			import0 = (int)((short)(CAN0->recvBuffer.data[0] ) ) ;
-			import1 = (int)((short)(CAN0->recvBuffer.data[1] ) ) ;
-			import2 = (int)((short)(CAN0->recvBuffer.data[2] ) ) ;
-			import3 = (int)((short)(CAN0->recvBuffer.data[3] ) ) ;
-			SPC_SDIO_1616c.import0 = import0;
-			SPC_SDIO_1616c.import1 = import1;
-			SPC_SDIO_1616c.import2 = import2;
-			SPC_SDIO_1616c.import3 = import3;
-			printf("SPC_SDIO_1616c_import0=%d\n", import0);
-			printf("SPC_SDIO_1616c_import1=%d\n", import1);
-			printf("SPC_SDIO_1616c_import2=%d\n", import2);
-			printf("SPC_SDIO_1616c_import3=%d\n", import3);
-    	    return SPC_SDIO_1616c;
+    float import0, import1,import2,import3;
+    SPC_SDIO_1616_t SPC_SDIO_1616c;
+    import0 = (int)((short)(CAN0->recvBuffer.data[0]));
+    import1 = (int)((short)(CAN0->recvBuffer.data[1]));
+    import2 = (int)((short)(CAN0->recvBuffer.data[2]));
+    import3 = (int)((short)(CAN0->recvBuffer.data[3]));
+    SPC_SDIO_1616c.import0 = import0;
+    SPC_SDIO_1616c.import1 = import1;
+    SPC_SDIO_1616c.import2 = import2;
+    SPC_SDIO_1616c.import3 = import3;
+    printf("SPC_SDIO_1616c_import0=%d\n", import0);
+    printf("SPC_SDIO_1616c_import1=%d\n", import1);
+    printf("SPC_SDIO_1616c_import2=%d\n", import2);
+    printf("SPC_SDIO_1616c_import3=%d\n", import3);
+    return SPC_SDIO_1616c;
+}
+void SDIO_Out_Data()
+{
+    SDIOa_Out0 = (int)(0x00);
+    SDIOa_Out1 = (int)(0x00);
+    SDIOa_Out2 = (int)(0x00);
+    SDIOa_Out3 = (int)(0x00);
+
+    SDIOc_Out0 = (int)(0x00);
+    SDIOc_Out1 = (int)(0x00);
+    SDIOc_Out2 = (int)(0x00);
+    SDIOc_Out3 = (int)(0x00);
+
+    CanSendThread(CAN0);//CAN发送
 }
 
 

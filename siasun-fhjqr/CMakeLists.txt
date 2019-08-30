@@ -16,11 +16,17 @@ include_directories(./SPC_SDIO_1616)
 include_directories(./UART)
 include_directories(./FD123_CA_000)
 include_directories(./HC_SuK043_C)
+include_directories(./buffer)
+include_directories(./net)
+include_directories(./protocol)
+include_directories(./TCP)
+include_directories(./Math)
 
 
 
 
-add_executable(IMUtest main.c ./HC_SuK043_C/HC_SuK043_C.c ./FD123_CA_000/FD123_CA_000.c ./CNS_MGS_160S/CNS_MGS_160S.c ./CNS_RFID_1S/CNS_RFID_1S.c ./UART/UART.c ./CAN/can.c ./FD123_CA_000/FD123_CA_000.c ./HC_SuK043_C/HC_SuK043_C.c ./SPC_SDIO_1616/SPC_SDIO_1616.c ./Timer/Timer.c)
+
+add_executable(IMUtest main.c ./TCP/TCP.c ./HC_SuK043_C/HC_SuK043_C.c ./FD123_CA_000/FD123_CA_000.c ./CNS_MGS_160S/CNS_MGS_160S.c ./CNS_RFID_1S/CNS_RFID_1S.c ./UART/UART.c ./CAN/can.c ./FD123_CA_000/FD123_CA_000.c ./HC_SuK043_C/HC_SuK043_C.c ./SPC_SDIO_1616/SPC_SDIO_1616.c ./Timer/Timer.c TCP/TCP.c TCP/TCP.h TCP/net.h TCP/protocol.h TCP/buffer.h)
 
 target_link_libraries(IMUtest pthread m rt)
 

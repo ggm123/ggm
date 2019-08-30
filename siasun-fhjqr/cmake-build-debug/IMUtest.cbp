@@ -42,6 +42,11 @@
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./HC_SuK043_C"/>
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./SPC_SDIO_1616"/>
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./UART"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./buffer"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./net"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./protocol"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./TCP"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./Math"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
@@ -71,6 +76,11 @@
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./HC_SuK043_C"/>
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./SPC_SDIO_1616"/>
 					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./UART"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./buffer"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./net"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./protocol"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./TCP"/>
+					<Add directory="/home/siasunhebo/ggm/siasun-fhjqr/./Math"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/arm-poky-linux-gnueabi"/>
 					<Add directory="/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi/usr/include/c++/4.9.1/backward"/>
@@ -130,6 +140,21 @@
 			<Option target="IMUtest"/>
 		</Unit>
 		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/SPC_SDIO_1616/SPC_SDIO_1616.h">
+			<Option target="IMUtest"/>
+		</Unit>
+		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.c">
+			<Option target="IMUtest"/>
+		</Unit>
+		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.h">
+			<Option target="IMUtest"/>
+		</Unit>
+		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/TCP/buffer.h">
+			<Option target="IMUtest"/>
+		</Unit>
+		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/TCP/net.h">
+			<Option target="IMUtest"/>
+		</Unit>
+		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/TCP/protocol.h">
 			<Option target="IMUtest"/>
 		</Unit>
 		<Unit filename="/home/siasunhebo/ggm/siasun-fhjqr/Timer/Timer.c">

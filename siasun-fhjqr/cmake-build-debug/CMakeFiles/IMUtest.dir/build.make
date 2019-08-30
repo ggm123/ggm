@@ -70,9 +70,22 @@ CMakeFiles/IMUtest.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IMUtest.dir/main.c.s"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/siasunhebo/ggm/siasun-fhjqr/main.c -o CMakeFiles/IMUtest.dir/main.c.s
 
+CMakeFiles/IMUtest.dir/TCP/TCP.c.o: CMakeFiles/IMUtest.dir/flags.make
+CMakeFiles/IMUtest.dir/TCP/TCP.c.o: ../TCP/TCP.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/IMUtest.dir/TCP/TCP.c.o"
+	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/TCP/TCP.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.c
+
+CMakeFiles/IMUtest.dir/TCP/TCP.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IMUtest.dir/TCP/TCP.c.i"
+	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.c > CMakeFiles/IMUtest.dir/TCP/TCP.c.i
+
+CMakeFiles/IMUtest.dir/TCP/TCP.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IMUtest.dir/TCP/TCP.c.s"
+	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/siasunhebo/ggm/siasun-fhjqr/TCP/TCP.c -o CMakeFiles/IMUtest.dir/TCP/TCP.c.s
+
 CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o: ../HC_SuK043_C/HC_SuK043_C.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/HC_SuK043_C/HC_SuK043_C.c
 
 CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o: ../FD123_CA_000/FD123_CA_000.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/FD123_CA_000/FD123_CA_000.c
 
 CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o: ../CNS_MGS_160S/CNS_MGS_160S.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/CNS_MGS_160S/CNS_MGS_160S.c
 
 CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.o: ../CNS_RFID_1S/CNS_RFID_1S.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/CNS_RFID_1S/CNS_RFID_1S.c
 
 CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/IMUtest.dir/CNS_RFID_1S/CNS_RFID_1S.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/UART/UART.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/UART/UART.c.o: ../UART/UART.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/IMUtest.dir/UART/UART.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/IMUtest.dir/UART/UART.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/UART/UART.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/UART/UART.c
 
 CMakeFiles/IMUtest.dir/UART/UART.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/IMUtest.dir/UART/UART.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/CAN/can.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/CAN/can.c.o: ../CAN/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/IMUtest.dir/CAN/can.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/IMUtest.dir/CAN/can.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/CAN/can.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/CAN/can.c
 
 CMakeFiles/IMUtest.dir/CAN/can.c.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/IMUtest.dir/CAN/can.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o: ../SPC_SDIO_1616/SPC_SDIO_1616.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/SPC_SDIO_1616/SPC_SDIO_1616.c
 
 CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.s: cmake_force
 
 CMakeFiles/IMUtest.dir/Timer/Timer.c.o: CMakeFiles/IMUtest.dir/flags.make
 CMakeFiles/IMUtest.dir/Timer/Timer.c.o: ../Timer/Timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/IMUtest.dir/Timer/Timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/IMUtest.dir/Timer/Timer.c.o"
 	/opt/poky/1.7/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc   -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/opt/poky/1.7/sysroots/cortexa9hf-vfp-neon-poky-linux-gnueabi $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/IMUtest.dir/Timer/Timer.c.o   -c /home/siasunhebo/ggm/siasun-fhjqr/Timer/Timer.c
 
 CMakeFiles/IMUtest.dir/Timer/Timer.c.i: cmake_force
@@ -177,6 +190,7 @@ CMakeFiles/IMUtest.dir/Timer/Timer.c.s: cmake_force
 # Object files for target IMUtest
 IMUtest_OBJECTS = \
 "CMakeFiles/IMUtest.dir/main.c.o" \
+"CMakeFiles/IMUtest.dir/TCP/TCP.c.o" \
 "CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o" \
 "CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o" \
 "CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o" \
@@ -190,6 +204,7 @@ IMUtest_OBJECTS = \
 IMUtest_EXTERNAL_OBJECTS =
 
 IMUtest: CMakeFiles/IMUtest.dir/main.c.o
+IMUtest: CMakeFiles/IMUtest.dir/TCP/TCP.c.o
 IMUtest: CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o
 IMUtest: CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o
 IMUtest: CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o
@@ -200,7 +215,7 @@ IMUtest: CMakeFiles/IMUtest.dir/SPC_SDIO_1616/SPC_SDIO_1616.c.o
 IMUtest: CMakeFiles/IMUtest.dir/Timer/Timer.c.o
 IMUtest: CMakeFiles/IMUtest.dir/build.make
 IMUtest: CMakeFiles/IMUtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable IMUtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/siasunhebo/ggm/siasun-fhjqr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable IMUtest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IMUtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

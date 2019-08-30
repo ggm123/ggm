@@ -1,0 +1,51 @@
+/*
+ * CNS_MGS_160S.c
+ *
+ *  Created on: 2019-8-26
+ *      Author: siasunhebo
+ */
+#include <CNS_MGS_160S.h>
+#include <stdio.h>
+
+canBus_t *CAN0;
+
+
+
+
+void CNS_MGS_160S_init()
+{
+	CAN0 = CanBusInit("can0");       //init can
+}
+
+CNS_MGS_160S_t CNS_MGS_160S_Analyze_Data()
+{
+    float point0, point1;
+    CNS_MGS_160S_t CNS_MGS_160Sa;
+    if(CAN0->sendBuffer.can_id==0x03)
+    {
+    	    point0 = (float)((short)(CAN0->recvBuffer.data[2] << 8) | CAN0->recvBuffer.data[3]) / 10.0;
+    	    point1 = (float)((short)(CAN0->recvBuffer.data[4] << 8) | CAN0->recvBuffer.data[5]) / 10.0;
+    		//printf("MPI204A_Angle=%f, MPI204A_AngleRate=%f\n", MPI204A_Angle, MPI204A_AngleRate);
+    	    CNS_MGS_160Sa.point0= point0;
+    	    CNS_MGS_160Sa.point1 = point1;
+    		printf("CNS_MGS_160S_point0=%f\n", point0);
+    		printf("CNS_MGS_160S_point1=%f\n", point1);
+    	    return CNS_MGS_160Sa;
+    }
+    else if(CAN0->sendBuffer.can_id==0x02)
+    {
+    }
+    else  if(CAN0->sendBuffer.can_id==0x03)
+    {
+    }
+    else  if(CAN0->sendBuffer.can_id==0x04)
+    {
+    }
+    else
+    {
+    }
+
+}
+
+
+

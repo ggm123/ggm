@@ -1,0 +1,64 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 24, 2019
+ *      Author: siasunhebo
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/time.h>
+#include <pthread.h>
+#include <sys/types.h>
+#include <can.h>
+#include <time.h>
+#include <signal.h>
+#include <Timer.h>
+#include <zconf.h>
+#include <CNS_MGS_160S.h>
+#include <SPC_SDIO_1616.h>
+
+
+
+extern canBus_t *CAN0;
+
+CNS_MGS_160S_t POINT0,POINT1;
+
+SPC_SDIO_1616_t IMPORT0,IMPORT1;
+SPC_SDIO_1616_t OUPUT0,OUPUT1;
+
+void Prase_Sensor_Data()
+{
+    CanSendThread(CAN0);//CAN发送
+	CanRecvThread(CAN0);  //CAN接收
+	 if(CAN0->sendBuffer.can_id==0x03)
+	 {
+		 POINT0 = CNS_MGS_160Sa_Analyze_Data();  //解析磁条传感器0
+	 }
+	 else if(CAN0->sendBuffer.can_id==0x04)
+	 {
+		 POINT1 = CNS_MGS_160Sc_Analyze_Data();  //解析磁条传感器1
+	 }
+
+	  if(CAN0->recvBuffer.can_id==0x08)
+	 {
+		 IMPORT0 = SPC_SDIO_1616a_Analyze_Data();  //解析远程IO0
+	 }
+	 else if(CAN0->recvBuffer.can_id==0x09)
+	 {
+		 IMPORT1 = SPC_SDIO_1616c_Analyze_Data();  //解析远程IO1
+	 }
+}
+
+int main ()
+{
+	CAN_init();      //CAN总线初始化
+
+	while(1)
+	{
+		Prase_Sensor_Data();    //传感器处理
+	}
+
+}

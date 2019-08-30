@@ -1,0 +1,64 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 24, 2019
+ *      Author: siasunhebo
+ */
+
+
+#include <main.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/time.h>
+#include <pthread.h>
+#include <sys/types.h>
+#include <can.h>
+#include <MPI204A.h>
+#include <time.h>
+#include <signal.h>
+#include <Timer.h>
+#include <Movement.h>
+#include <MPI204A.h>
+#include <zconf.h>
+
+
+
+
+extern canBus_t *CAN0;
+
+MPI204A_t IMU;
+CNS_MGS_160S_t POINT;
+
+float MPI204A_Angle = 0.0;   //IMU角度值
+float MPI204A_AngleRate = 0.0;    //IMU角速度
+
+float CNS_MGS_160S_point0 = 0.0;
+float CNS_MGS_160S_point1 = 0.0;
+
+extern float angle;
+extern float point;
+
+
+void Prase_Sensor_Data()
+{
+    CanSendThread(CAN0);
+	CanRecvThread(CAN0);  //初始化can0通道
+	IMU = MPI204A_Analyze_Data();  //解析imu角度及角速度
+	POINT = CNS_MGS_160S_Analyze_Data();  //解析POINT
+
+}
+
+
+int main ()
+{
+
+	MPI204A_init();      //IMU初始化
+	CNS_MGS_160S_init();      //IMU初始化
+
+	while(1)
+	{
+		Prase_Sensor_Data();    //传感器处理
+	}
+
+}

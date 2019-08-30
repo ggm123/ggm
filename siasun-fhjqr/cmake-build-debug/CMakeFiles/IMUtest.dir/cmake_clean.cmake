@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IMUtest.dir/main.c.o"
+  "CMakeFiles/IMUtest.dir/TCP/TCP.c.o"
   "CMakeFiles/IMUtest.dir/HC_SuK043_C/HC_SuK043_C.c.o"
   "CMakeFiles/IMUtest.dir/FD123_CA_000/FD123_CA_000.c.o"
   "CMakeFiles/IMUtest.dir/CNS_MGS_160S/CNS_MGS_160S.c.o"

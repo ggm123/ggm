@@ -22,6 +22,8 @@
 #include <CNS_RFID_1S.h>
 #include <FD123_CA_000.h>
 #include <HC_SuK043_C.h>
+#include <TCP.h>
+
 
 
 
@@ -29,6 +31,8 @@ extern canBus_t *CAN0;
 
 extern int SDIOa_Out0,  SDIOa_Out1,  SDIOa_Out2,  SDIOa_Out3;
 extern int SDIOc_Out0,  SDIOc_Out1,  SDIOc_Out2,  SDIOc_Out3;
+
+char buffer[8];    //发送电台数组
 
 
 CNS_MGS_160S_t POINT0,POINT1;
@@ -46,11 +50,11 @@ void Prase_Sensor_Data()
 
 	 if(CAN0->sendBuffer.can_id==0x03)
 	 {
-		 POINT0 = CNS_MGS_160Sa_Analyze_Data();  //解析磁条传感器0
+		 POINT0 = CNS_MGS_160Sa_Analyze_Data(); //解析磁条传感器0
 	 }
 	 else if(CAN0->sendBuffer.can_id==0x04)
 	 {
-		 POINT1 = CNS_MGS_160Sc_Analyze_Data();  //解析磁条传感器1
+		 POINT1 = CNS_MGS_160Sc_Analyze_Data(); //解析磁条传感器1
 	 }
 	 else if(CAN0->sendBuffer.can_id==0x05)//解析显示屏
 	 {
@@ -75,33 +79,29 @@ void Prase_Sensor_Data()
 	 }
 }
 
-void SDIO_Out_Data()
-{
-	int SDIOa_Out0,  SDIOa_Out1,  SDIOa_Out2,  SDIOa_Out3;
-    int SDIOc_Out0,  SDIOc_Out1,  SDIOc_Out2,  SDIOc_Out3;
-
-	SDIOa_Out0 = (int)(0x00);
-	SDIOa_Out1 = (int)(0x00);
-	SDIOa_Out2 = (int)(0x00);
-	SDIOa_Out3 = (int)(0x00);
-
-	SDIOc_Out0 = (int)(0x00);
-	SDIOc_Out1 = (int)(0x00);
-	SDIOc_Out2 = (int)(0x00);
-	SDIOc_Out3 = (int)(0x00);
-
-	CanSendThread(CAN0);//CAN发送
-}
-
 
 int main ()
 {
 	CAN_init();      //CAN总线初始化
 
+    Get_TCP_Init();
+    Get_Pthread();
+
 	while(1)
 	{
+        buffer[0] = 1;
+        buffer[1] = 2;
+        buffer[2] = 3;
+        buffer[3] = 4;
+        buffer[4] = 5;
+        buffer[5] = 6;
+        buffer[6] = 7;
+        buffer[7] = 8;
+
 		Prase_Sensor_Data();    //传感器处理
 		SDIO_Out_Data();    //SDIO输出
+
+        Get_Transceiver_Data();//获得电台数据
 
 	}
 

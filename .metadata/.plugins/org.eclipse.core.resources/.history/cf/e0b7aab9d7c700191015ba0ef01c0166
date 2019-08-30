@@ -1,0 +1,45 @@
+/*
+ * SPC_SDIO_1616.c
+ *
+ *  Created on: 2019-8-26
+ *      Author: siasunhebo
+ */
+
+#include <SPC_SDIO_1616.h>
+#include <stdio.h>
+
+
+
+SPC_SDIO_1616_t SPC_SDIO_1616a_Analyze_Data()
+{
+			float point0, point1,point2;
+			SPC_SDIO_1616_t SPC_SDIO_1616a;
+    	    point0 = (int)((short)(CAN0->recvBuffer.data[0] ) ) ;
+    	    point1 = (int)((short)(CAN0->recvBuffer.data[1] ) ) ;
+    	    point2 = (int)((short)(CAN0->recvBuffer.data[2] ) ) ;
+    	    SPC_SDIO_1616a.point0 = point0;
+    	    SPC_SDIO_1616a.point1 = point1;
+    	    SPC_SDIO_1616a.point2 = point2;
+    		printf("SPC_SDIO_1616a_point0=%d\n", point0);
+    		printf("SPC_SDIO_1616a_point1=%d\n", point1);
+    		printf("SPC_SDIO_1616a_point2=%d\n", point2);
+    	    return SPC_SDIO_1616a;
+}
+SPC_SDIO_1616_t SPC_SDIO_1616c_Analyze_Data()
+{
+			float point0, point1,point2;
+			SPC_SDIO_1616_t  SPC_SDIO_1616c;
+	        point0 = (int)((short)(CAN0->recvBuffer.data[0] ) ) ;
+    	    point1 = (int)((short)(CAN0->recvBuffer.data[1] ) ) ;
+    	    point2 = (int)((short)(CAN0->recvBuffer.data[2] ) ) ;
+    	    SPC_SDIO_1616c.point0= point0;
+    	    SPC_SDIO_1616c.point1 = point1;
+    	    SPC_SDIO_1616c.point2 = point2;
+    		printf("SPC_SDIO_1616b_point0=%d\n", point0);
+    		printf("SPC_SDIO_1616b_point1=%d\n", point1);
+    		printf("SPC_SDIO_1616b_point2=%d\n", point2);
+    	    return SPC_SDIO_1616c;
+}
+
+
+

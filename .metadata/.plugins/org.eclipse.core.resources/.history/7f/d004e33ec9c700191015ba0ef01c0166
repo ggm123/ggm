@@ -1,0 +1,24 @@
+/*
+ * CNS_MGS_160S.h
+ *
+ *  Created on: 2019-8-26
+ *      Author: siasunhebo
+ */
+
+#ifndef CNS_MGS_160S_H_
+#define CNS_MGS_160S_H_
+
+#include <can.h>
+
+typedef struct CNS_MGS_160S
+{
+    float point0;
+    float point1;
+}CNS_MGS_160S_t;
+
+void CNS_MGS_160S_init();
+CNS_MGS_160S_t CNS_MGS_160S_Analyze_Data();
+
+
+
+#endif /* CNS_MGS_160S_H_ */
